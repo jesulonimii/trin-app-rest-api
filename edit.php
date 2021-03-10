@@ -1,8 +1,9 @@
 <?php
 include_once 'db.php';
 
-$title = $description = $content = $category = $img = $result = "";
+$id = $title = $description = $content = $category = $img = $result = "";
 
+$id = $_POST["id"];
 $title = addslashes(htmlspecialchars($_POST["title"]));
 $description = addslashes(htmlspecialchars($_POST["description"]));
 $content = addslashes($_POST["content"]);
@@ -15,7 +16,7 @@ $date = date('M d, Y');
 
 
 
-$query = "INSERT INTO articles (title, content, description, `date`, category,  img) VALUES ('$title', '$content', '$description', '$date', '$category', '$img')";
+$query = "UPDATE articles SET title = '$title' , content = '$content', description = '$description', `date` = '$date', category = '$category',  img = '$img' WHERE id = '$id'";
 
 
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
@@ -27,7 +28,7 @@ $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Post Add</title>
+	<title>Post Edit</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,15 +40,15 @@ $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 			<h2>Feedback</h2>
 
 			<div class="success" <?php if(!$result){echo "hidden";} ?> >
-				Post Added Successfully
+				Post Edits Made
 			</div>
 
 			<div class="failed" <?php if($result){echo "hidden";} ?> >
-				Post Could not be Added!
+				Post Could not be Updated!
 			</div>
 			
 			<div class="back-links">
-				<a  href="addPost.php">Back to Add Post</a> |
+				<a  href="editPost.php">Back to Edit Post</a> |
 				<a href="home.php">Back to home</a>
 			</div>
 		</div>

@@ -1,9 +1,9 @@
 <?php
 
-$db_host = "sql104.epizy.com";
-$db_dbname = "epiz_27422941_trin_posts";
-$db_username = "epiz_27422941";
-$db_password = "will4christ2";
+$db_host = "sql4.freemysqlhosting.net";
+$db_dbname = "sql4397947";
+$db_username = "sql4397947";
+$db_password = "g8xNQ4uIxN";
 
 
 //$db_host = "localhost";

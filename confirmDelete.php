@@ -1,3 +1,4 @@
+<?php require_once 'checkLogin.php'; ?>
 <?php
 include_once 'db.php';
 
@@ -19,6 +20,8 @@ $confirmTitle = null;
 while ($row = mysqli_fetch_assoc($result)) {
 	$confirmTitle = $row["title"];
 }
+
+mysqli_close();
 
 ?>
 <!DOCTYPE html>
@@ -59,6 +62,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 		</div>
 		
+		<?php include_once 'signature.php'; ?>
 
 	</div>
 

@@ -1,3 +1,4 @@
+<?php require_once 'checkLogin.php'; ?>
 <?php
 include_once 'db.php';
 
@@ -12,6 +13,8 @@ $query = "DELETE FROM `articles` WHERE articles.id = $post_id";
 
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
+
+mysqli_close();
 
 ?>
 <!DOCTYPE html>
@@ -39,6 +42,8 @@ $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 			</div>
 			
 		</div>
+
+		<?php include_once 'signature.php'; ?>
 
 	</div>
 	

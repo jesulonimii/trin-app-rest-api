@@ -1,3 +1,4 @@
+<?php require_once 'checkLogin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +32,8 @@
 
 
 	</form>
+
+	<?php include_once 'signature.php'; ?>
 
 	</div>
 

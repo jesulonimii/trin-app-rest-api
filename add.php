@@ -1,3 +1,4 @@
+<?php require_once 'checkLogin.php'; ?>
 <?php
 include_once 'db.php';
 
@@ -20,6 +21,8 @@ $query = "INSERT INTO articles (title, content, description, `date`, category,  
 
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
+
+mysqli_close();
 ?>
 
 <!DOCTYPE html>
@@ -51,6 +54,8 @@ $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 				<a href="home.php">Back to home</a>
 			</div>
 		</div>
+
+		<?php include_once 'signature.php'; ?>
 
 	</div>
 	

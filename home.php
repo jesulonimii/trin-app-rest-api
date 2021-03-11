@@ -1,3 +1,4 @@
+<?php require_once 'checkLogin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +16,11 @@
 		<a class="manage-links" href="addPost.php">Add Post</a><br>
 		<a class="manage-links" href="editPost.php">Edit Post</a><br>
 		<a class="manage-links" href="deletePost.php">Delete Post</a><br>
-		<a class="manage-links" href="api">View API (developer use only)</a><br>
+		<a class="manage-links" href="api">View API (developer use, track post)</a><br>
+		<a class="manage-links" style="background: #ff2828; color: white; border: 0;" href="logout.php">Log Out</a><br>
 
 
-		<h5 style="text-align: center;">Built by Jesulonimii</h5>
+		<?php include_once 'signature.php'; ?>
 	</div>
 	
 

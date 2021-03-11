@@ -1,3 +1,4 @@
+<?php require_once 'checkLogin.php'; ?>
 <?php
 
 include_once 'db.php';
@@ -23,6 +24,8 @@ while ($row = mysqli_fetch_assoc($result)) {
 	$fetchCategory = $row["category"];
 	$fetchImg = $row["img"];
 }
+
+mysqli_close();
 
 ?>
 
@@ -69,6 +72,8 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 
 	</form>
+
+	<?php include_once 'signature.php'; ?>
 
 	</div>
 

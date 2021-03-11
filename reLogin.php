@@ -1,16 +1,4 @@
-<?php
 
-session_start();
-
-
-if ($_SESSION["verified"] == true) {
-	header("location: home.php");
-} 
-else{
-	//nothing
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +12,10 @@ else{
 	<div class="container">
 
 	<form action="login.php" method="post">
+
+		<div class="failed" >
+			Session could not be found, please login again
+		</div><br>
 
 		<h2>Login to the App Admin Manager</h2>
 

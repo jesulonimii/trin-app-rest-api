@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $username = $password = "";
 
@@ -17,9 +18,10 @@ if ($username == "admin" && $password == "admin2021") {
 
 
 if ($result) {
-	$_SESSION["verified"] = true;
+
+	$_SESSION["loggedIn"] = true;
 	$_SESSION["user"] = $username;
-	session_start();
+	
 	header("location: home.php");
 }
 

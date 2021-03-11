@@ -44,7 +44,7 @@ body{
 	background-color: #ec5f5f;
     padding: 5px 10px;
     text-align: center;
-    color: #a40909;
+    color: /*#a40909*/ black;
     border: 1px solid;
     border-radius: 5px;
 }
@@ -158,12 +158,12 @@ a.manage-links{
     display: block;
     width: 80%;
     margin: auto;
-    padding: 5px 5px;
+    padding: 10px 5px;
     text-align: center;
     outline: 0;
     border-radius: 5px;
     border: 1px solid #4970f8;
-    color: #4970f8;
+    color:  #4970f8;
     text-decoration: none;
     transition: .25s;
     font-size: .8em;

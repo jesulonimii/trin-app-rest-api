@@ -13,11 +13,13 @@
 
 	<form action="login.php" method="post">
 
-		<div class="failed" >
-			Session could not be found, please login again
-		</div><br>
+		
 
 		<h2>Login to the App Admin Manager</h2>
+
+		<div class="failed">
+			You have to be logged in to continue
+		</div><br>
 
 		<input type="text"	placeholder="username" name="username" maxlength="15">
 		<br>

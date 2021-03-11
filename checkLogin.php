@@ -1,8 +1,7 @@
 <?php
-
 session_start();
 
-if ($_SESSION["verified"] == true) {
+if ($_SESSION["loggedIn"] == true) {
 	//nothing
 } 
 else{

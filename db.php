@@ -2,7 +2,7 @@
 
 
 $db_host = "localhost";
-$db_dbname = "id16360826_jesulonimii";
+$db_dbname = "id16360826_jesulonimii_api";
 $db_username = "id16360826_jesulonimii";
 $db_password = "Will4christ-2003";
 

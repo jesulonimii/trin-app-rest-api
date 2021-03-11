@@ -5,7 +5,7 @@ $post_id = "null";
 
 $post_id = $_POST["id"];
 
-$confirmDelete = "SELECT  `title` FROM `articles` WHERE articles.id = $post_id";
+$confirmDelete = "SELECT  `title` FROM `trin_articles` WHERE trin_articles.id = $post_id";
 
 
 

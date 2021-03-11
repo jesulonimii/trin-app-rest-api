@@ -15,7 +15,7 @@ $date = date('M d, Y');
 
 
 
-$query = "INSERT INTO articles (title, content, description, `date`, category,  img) VALUES ('$title', '$content', '$description', '$date', '$category', '$img')";
+$query = "INSERT INTO trin_articles (title, content, description, `date`, category,  img) VALUES ('$title', '$content', '$description', '$date', '$category', '$img')";
 
 
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));

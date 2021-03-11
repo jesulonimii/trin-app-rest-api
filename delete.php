@@ -7,7 +7,7 @@ $post_id = $_GET["id"];
 
 
 
-$query = "DELETE FROM `articles` WHERE articles.id = $post_id";
+$query = "DELETE FROM `trin_articles` WHERE trin_articles.id = $post_id";
 
 
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));

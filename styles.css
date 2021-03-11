@@ -3,6 +3,8 @@
 	box-sizing: border-box;
 }
 
+
+
 body{
 	background-color: dodgerblue;
 	font-family: Poppins;
@@ -11,9 +13,11 @@ body{
 
 .container{
 	background-color: white;
-	max-width: 80%;
+	max-width: 100%;
 	min-width: 40%;
 	min-height: 60%;
+	max-height: 90%;
+	overflow-y: auto;
 	border-radius: 10px;
 	position: absolute;
 	padding: 20px;
@@ -56,6 +60,16 @@ input[type = "text"], input[type = "password"], input[type = "number"], input[ty
 	border: 1px solid gray;
 	border-radius: 5px;
 	padding: 10px 5px;
+
+}
+
+input:focus, textarea:focus, select:focus{
+	border: 1px solid dodgerblue;
+    transition: 0.25s;
+    box-shadow: 0px 0px 3px 1px #2f96fa;
+}
+
+
 }
 
 textarea{

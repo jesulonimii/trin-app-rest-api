@@ -16,6 +16,10 @@ $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
 
 $fetchTitle = null;
+$fetchDescription = null;
+$fetchContent = null;
+$fetchCategory = null;
+$fetchImg = null;
 
 while ($row = mysqli_fetch_assoc($result)) {
 	$fetchTitle = $row["title"];
@@ -44,6 +48,11 @@ while ($row = mysqli_fetch_assoc($result)) {
 	<div class="container">
 
 		<h2>Edit Post</h2>
+
+		<div class="failed" style="display: <?php if($fetchTitle = null){echo "none";} ?>">
+				Post with supplied id does not exist! <a href="editPost.php"
+				style="text-decoration: none; color: inherit;">try again</a>
+		</div>
 
 		<h5 style="text-align: center; color: gray;">Make your required changes.</h5>
 		

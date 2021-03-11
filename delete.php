@@ -43,6 +43,11 @@ $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 			
 		</div>
 
+		<div class="back-links">
+				<a  href="deletePost.php">Back to Delete Post</a> |
+				<a href="home.php">Back to home</a>
+		</div>
+
 		<?php include_once 'signature.php'; ?>
 
 	</div>

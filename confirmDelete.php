@@ -6,7 +6,7 @@ $post_id = "null";
 
 $post_id = $_POST["id"];
 
-$confirmDelete = "SELECT  `title` FROM `articles` WHERE articles.id = $post_id";
+$confirmDelete = "SELECT  * FROM `articles` WHERE articles.id = $post_id";
 
 
 
@@ -16,9 +16,11 @@ $result = mysqli_query($connection, $confirmDelete) or die(mysqli_error($connect
 
 
 $confirmTitle = null;
+$confirmDate = null;
 
 while ($row = mysqli_fetch_assoc($result)) {
 	$confirmTitle = $row["title"];
+	$confirmDate = $row["date"];
 }
 
 
@@ -36,7 +38,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 	<div class="container">
 		
-		<div class="go-delete" <?php if ($confirmTitle == null) {echo "hidden";} ?> >
+		<div class="go-delete" <?php if ($confirmDate == null) {echo "hidden";} ?> >
 			<h2>Confirm Delete</h2>
 			Are you sure you want to delete post with title:<br> 
 			<h3><?php echo $confirmTitle ?><h3>
@@ -47,7 +49,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 		</div>
 
 
-		<div class="not-exist" <?php if (!$confirmTitle == null) {echo "hidden";} ?>>
+		<div class="not-exist" <?php if (!$confirmDate == null) {echo "hidden";} ?>>
 
 			<h2>Error</h2>
 			<div class="failed"  >

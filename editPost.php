@@ -24,6 +24,10 @@
 
 	</form>
 
+	<div class="back-links">
+			<a href="home.php">Back to home</a>
+	</div>
+
 	<?php include_once 'signature.php'; ?>
 
 	</div>

@@ -16,7 +16,7 @@
 		<a class="manage-links" href="addPost.php">Add Post</a><br>
 		<a class="manage-links" href="editPost.php">Edit Post</a><br>
 		<a class="manage-links" href="deletePost.php">Delete Post</a><br>
-		<a class="manage-links" href="api">Track API (for developer use)</a><br>
+		<a class="manage-links" href="api" target="_blank">Track API (for developer use)</a><br>
 		<a class="manage-links" style="background: #ff2828; color: white; border: 0;" href="logout.php">Log Out</a><br>
 
 

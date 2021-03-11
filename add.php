@@ -18,8 +18,14 @@ $date = date('M d, Y');
 
 $query = "INSERT INTO articles (title, content, description, `date`, category,  img) VALUES ('$title', '$content', '$description', '$date', '$category', '$img')";
 
+$empty = false;
 
-$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+if (!$title == "" && !$category == "") {
+	$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+} else{
+	$empty = true;
+}
+
 
 
 
@@ -47,6 +53,10 @@ $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
 			<div class="failed" <?php if($result){echo "hidden";} ?> >
 				Post Could not be Added!
+			</div><br>	
+
+			<div class="failed" <?php if(!$empty){echo "hidden";} ?> >
+				Looks like you got here by mistake..
 			</div>
 			
 			<div class="back-links">

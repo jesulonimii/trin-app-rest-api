@@ -14,7 +14,7 @@ $query = "DELETE FROM `articles` WHERE articles.id = $post_id";
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
 
-mysqli_close($connection);
+
 
 ?>
 <!DOCTYPE html>

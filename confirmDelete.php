@@ -21,7 +21,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 	$confirmTitle = $row["title"];
 }
 
-mysqli_close($connection);
+
 
 ?>
 <!DOCTYPE html>

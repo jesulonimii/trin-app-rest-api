@@ -22,7 +22,7 @@ $query = "INSERT INTO articles (title, content, description, `date`, category,  
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
 
-mysqli_close($connection);
+
 ?>
 
 <!DOCTYPE html>

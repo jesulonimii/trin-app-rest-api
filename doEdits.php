@@ -5,7 +5,7 @@ include_once 'db.php';
 $post_id = $_POST["id"];
 
 
-$query = "SELECT * FROM `trin_articles` WHERE trin_articles.id = $post_id";
+$query = "SELECT * FROM `articles` WHERE articles.id = $post_id";
 
 
 

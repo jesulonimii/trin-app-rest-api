@@ -16,7 +16,7 @@ $date = date('M d, Y');
 
 
 
-$query = "UPDATE trin_articles SET title = '$title' , content = '$content', description = '$description', `date` = '$date', category = '$category',  img = '$img' WHERE id = '$id'";
+$query = "UPDATE articles SET title = '$title' , content = '$content', description = '$description', `date` = '$date', category = '$category',  img = '$img' WHERE id = '$id'";
 
 
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));

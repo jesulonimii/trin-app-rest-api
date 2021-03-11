@@ -22,7 +22,7 @@ $query = "UPDATE articles SET title = '$title' , content = '$content', descripti
 
 $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 
-mysqli_close();
+mysqli_close($connection);
 ?>
 
 <!DOCTYPE html>

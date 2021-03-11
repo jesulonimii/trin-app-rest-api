@@ -25,7 +25,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 	$fetchImg = $row["img"];
 }
 
-mysqli_close();
+mysqli_close($connection);
 
 ?>
 

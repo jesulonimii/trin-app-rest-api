@@ -49,3 +49,5 @@ $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 	
 </body>
 </html>
+
+<?php mysqli_close($connection); ?>

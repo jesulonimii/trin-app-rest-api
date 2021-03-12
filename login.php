@@ -1,4 +1,3 @@
-<?php require_once 'checkLogin.php'; ?>
 <?php
 
 $username = $password = "";

@@ -13,6 +13,8 @@
 		
 		<h2>Trin App Manager</h2>
 
+		<h5 style="text-align: center; color: gray;">What do you want to do?</h5>
+
 		<a class="manage-links" href="addPost.php">Add Post</a><br>
 		<a class="manage-links" href="editPost.php">Edit Post</a><br>
 		<a class="manage-links" href="deletePost.php">Delete Post</a><br>

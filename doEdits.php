@@ -79,11 +79,11 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 			<textarea name="content" rows="20" placeholder="content here" required><?php echo $fetchContent; ?></textarea><br>
 		
-			<select name="category" value="<?php echo $fetchCategory; ?>" required>
-				<option value="Teens Talk Thursday">Teens Talk Thursday</option>
-				<option value="Coro Talk">Coro Talk</option>
-				<option value="Bible study">Bible study</option>
-				<option value="Others">Others</option>
+			<select name="category"  <?php echo $fetchCategory; ?> required>
+				<option  <?php if($fetchCategory=="Teens Talk Thursday"){ echo "selected";} ; ?> value="Teens Talk Thursday">Teens Talk Thursday</option>
+				<option <?php if($fetchCategory=="Coro Talk"){ echo "selected";} ; ?> value="Coro Talk">Coro Talk</option>
+				<option <?php if($fetchCategory=="Bible Study"){ echo "selected";} ; ?> value="Bible study">Bible study</option>
+				<option <?php if($fetchCategory=="Others"){ echo "selected";} ; ?> value="Others">Others</option>
 			</select>
 			<br>
 			<input type="url" value="<?php echo $fetchImg; ?>" placeholder="Image link" name="img" required>

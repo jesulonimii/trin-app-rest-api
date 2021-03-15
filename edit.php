@@ -13,7 +13,7 @@ $img = htmlspecialchars($_POST["img"]);
 
 
 date_default_timezone_set("Africa/Lagos");
-$date = date('M d, Y');
+$date = "Edited:" + date('M d, Y');
 
 
 

@@ -1,6 +1,6 @@
 <?php
 
-
+//TODO: Move this somwhere else
 
 $db_host = "sql4.freemysqlhosting.net";
 $db_dbname = "sql4397947";

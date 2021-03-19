@@ -12,6 +12,11 @@
     "orientation": "portrait",
     "related_applications": [],
     "prefer_related_applications": false,
-    "icons": [],
+    "icons": [
+    {
+         "src":"/icon.png",
+         "sizes":"512x512",
+         "type":"image/png"
+      }],
     "url": "https://trin100-api.herokuapp.com/"
 }

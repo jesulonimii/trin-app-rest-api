@@ -1,0 +1,17 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Login to Trin App Manager",
+    "short_name": "Login to Trin App",
+    "scope": "/adminLogin.php",
+    "display": "minimal-ui",
+    "start_url": "https://trin100-api.herokuapp.com/adminLogin.php",
+    "background_color": "#1e90ff",
+    "theme_color": "#1e90ff",
+    "description": "Manage the Trin app content",
+    "orientation": "portrait",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [],
+    "url": "https://trin100-api.herokuapp.com/"
+}

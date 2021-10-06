@@ -2,7 +2,7 @@
 
 //TODO: Move this somwhere else
 
-$db_host = "sql4.freemysqlhosting.net";
+$db_host = "db4free.net";
 $db_dbname = "jesulonimii_trin";
 $db_username = "jesulonimii_trin";
 $db_password = "jesus4eva";

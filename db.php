@@ -3,9 +3,9 @@
 //TODO: Move this somwhere else
 
 $db_host = "sql4.freemysqlhosting.net";
-$db_dbname = "sql4397947";
-$db_username = "sql4397947";
-$db_password = "g8xNQ4uIxN";
+$db_dbname = "jesulonimii_trin";
+$db_username = "jesulonimii_trin";
+$db_password = "jesus4eva";
 
 
 

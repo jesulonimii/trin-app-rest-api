@@ -2,7 +2,7 @@
 
 //TODO: Move this somwhere else
 
-//add databse auth details here
+//add custom MySql database auth details here
 $db_host = "";
 $db_dbname = "";
 $db_username = "";

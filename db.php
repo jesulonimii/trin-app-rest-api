@@ -2,19 +2,11 @@
 
 //TODO: Move this somwhere else
 
-/*
-$db_host = "db4free.net";
-$db_dbname = "jesulonimii_trin";
-$db_username = "jesulonimii_trin";
-$db_password = "jesus4eva";
-
-*/
-
-
-$db_host = "sql4.freesqldatabase.com";
-$db_dbname = "sql4442496";
-$db_username = "sql4442496";
-$db_password = "5X3rueRCrc";
+//add databse auth details here
+$db_host = "";
+$db_dbname = "";
+$db_username = "";
+$db_password = "";
 
 
 

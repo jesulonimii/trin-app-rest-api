@@ -7,6 +7,8 @@ $username = $password = "";
 $username = htmlspecialchars($_POST["username"]);
 $password = htmlspecialchars($_POST["password"]);
 
+//temporary authentication setup here
+//TODO: replace with authentication from json or database
 if ($username == "admin" && $password == "admin2021") {
 	
 	$result = true;
